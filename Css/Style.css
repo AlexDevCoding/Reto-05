@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+}
+
+
+.Contenedor {
+ 
+    background: hsl(221, 100%, 96%);
+    width: 700px;
+    /* box-shadow: 6px 7px 20px 0px #000; */
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.subcontenedor {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background: linear-gradient(360deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+
+.circulo {
+    border-radius: 50%;
+    background: radial-gradient(hsla(256, 72%, 46%, 1),hsl(0deg 0% 0% / 0%));
+    height: 241px;
+    width: 225px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title, h1 {
+    font-size: 24px;
+    color: hsl(166, 100%, 37%); 
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.parrafo {
+    color: white;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.hijo, .hijo2 {
+    color: hsl(166, 100%, 37%);
+}
+
+.titulo {
+    color: white;
+    line-height: 2px;
+}
+
+.hijo2 {
+    text-align: center;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titulo2 {
+    margin-left: 30px;
+    color: hsl(224, 30%, 27%);
+
+}
+
+.maximo {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna {
+    background: hsl(241, 100%, 89%);
+    border-radius: 20px;
+    width: 290px;
+    margin-bottom: 20px;
+    height: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    color: #ff5555;
+    font-weight: 700;
+    
+}
+
+#columna2 {
+    color: hsl(39, 100%, 56%);
+}
+
+#columna3 {
+    color: hsl(166, 100%, 37%);
+}
+
+#columna4 {
+    color: hsla(256, 72%, 46%, 1);
+}
+
+button {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: hsl(224, 30%, 27%);
+    border-style: none;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button:active {
+    background: hsl(234, 85%, 45%);
+}
+
+.favicon {
+    margin-left: 10px;
+    width: 30px;
+}
+
+.p {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.importante {
+    color: black;
+    
+}
+
+
+.nuevo {
+    color: hsl(234, 85%, 45%);
+}
+
+
+@media(max-width: 1000px) {
+
+    .Contenedor{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .subcontenedor {
+        display: flex;
+        width: auto;
+    }
+
+    .hijo2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .Contenedor {
+        margin-top: 40%;
+        
+    }
+
+}
